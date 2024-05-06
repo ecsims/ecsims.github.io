@@ -89,11 +89,11 @@ figcaption {
 aside {
     background: rgb(203, 208, 255);
     background-size: 100%;
-    padding: 0em 0.35em 1em 0.35em;
+    padding: 0 0.35em 1em 0.35em;
 }
 
 aside figure {
-    padding: 1em 0.15em 0em 0.15em;
+    padding: 0em 0.15em 0em 0.15em;
 }
 
 aside p {
@@ -102,6 +102,7 @@ aside p {
 
 aside h2 {
     margin-left: 0.35em;
+    margin-top: .75em;
 }
 
 
