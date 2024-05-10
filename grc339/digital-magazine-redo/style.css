@@ -42,7 +42,7 @@ section {
 }
 
 header {
-    margin: .2rem .5rem 0;
+    margin: .2em .5em 0;
 }
 
 nav ul li{
@@ -79,18 +79,22 @@ section.mainstory h2 {
     font-size: 2.5em;
 }
 
+section.mainstory h2 {
+    margin-left: 0;
+}
+
 section.tertiary h2 {
     font-size: 1.15em;
     padding-top: 0.5em;
     border-top: 0.01em solid rgb(79, 101, 123);
 }
 
-section.mainstory {
+section.mainstory a figure img {
     margin: 0.75em 0em 0.5em 0em;
 }
 
 figcaption {
-    padding: .2em .5em 1em;
+    padding: 0em 0em 1em 0em;
     font-style: italic;
     font-family: sans-serif;
     color: rgb(110, 110, 115);
