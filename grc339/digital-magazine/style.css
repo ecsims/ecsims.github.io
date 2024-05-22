@@ -7,10 +7,11 @@ ul {
 }
 
 nav ul li a {
-    font-family: sans-serif;
+    font-family: quasimoda, sans-serif;
+    font-style: normal;
+    font-weight: 200;
 	text-decoration: none;
-    color: rgb(84, 119, 153);
-    font-weight: bold;
+    color: #A7C133;
     list-style-type: none;
 }
 
@@ -22,6 +23,8 @@ nav ul li {
 div.container, div.home-container {
     max-width: 40em;
     margin: 0 auto;
+    position: relative;
+    background-color: #36311F;
 }
 
 
@@ -36,22 +39,29 @@ a {
 
 p {
     text-decoration: none;
-    color: black;
-    font-family: sans-serif;
+    color: #a79b86;
+    font-family: quasimoda, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    padding: .25em;
     margin-bottom: 1.5em;
     margin-right: 1em;
     line-height: 1.25em;
 }
 
 h1 {
-    max-width: 7em;
+    max-width: 15em;
     padding: 1em 0em 1em 0em;
+    justify-content: center;
+    align-items: center;
 }
 
 h2 {
-    font-family: serif;
-    color: rgb(88, 119, 151);
-    font-weight: bold;
+    font-family: "ccmonstermash", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    padding: .25em;
+    color: #A7C133;
 }
 
 article h2 {
@@ -69,7 +79,7 @@ section.secondary h2 {
 
 section.tertiary h2 {
     font-size: 1.15em;
-    border-top: 0.075em solid rgb(88, 119, 151);
+    border-top: 0.075em solid #A7C133;
     padding-top: 0.5em;
 }
 
@@ -82,12 +92,12 @@ figcaption {
     font-size: 1em;
     padding: 0.25em 0em 0.5em 0em;
     font-family: sans-serif;
-    color: rgb(90, 90, 90);
+    color: #A7C133;
     line-height: 1.25em;
 }
 
 aside {
-    background: rgb(203, 208, 255);
+    background:  #36311F;
     background-size: 100%;
     padding: 0 0.35em 1em 0.35em;
 }
@@ -96,20 +106,15 @@ aside figure {
     padding: 0em 0.15em 0em 0.15em;
 }
 
-aside p {
-    margin-left: 0.4em;
-}
-
 aside h2 {
-    margin-left: 0.35em;
     margin-top: .75em;
 }
 
 
 footer {
     padding: .5em;
-    background: rgb(68, 92, 116);
-    font-family: sans-serif;
+    background: #A7C133;
+    font-family: "quasimoda", sans-serif;
     width: 100%;
     box-sizing: border-box;
 
@@ -117,7 +122,7 @@ footer {
 
 footer p {
     margin: 0;
-    color: rgb(234, 234, 234);
+    color: #36311F;
 }
 
 @media screen and (max-width: 40em) {
@@ -129,27 +134,41 @@ footer p {
 
     nav {
         padding-bottom: 0.5em;
+        margin-left: .5em;
     }
 
     h1 {
         max-width: 7em;
-        padding: 1em 0em 1em 0.5em;
+        padding: 0.5em 0em 0em 0.4em;
+        margin-left: .7em;
     }
     
     h2 {
-        padding: 0em 0em 0em 0.15em;
+        padding: 0.5em 0em 0em 0.4em;
     }
 
     section.secondary h2 {
-        padding: 0em 0em 0em 0.3em;
+        padding: 0.5em 0em 0em 0.4em;
+        margin-left: .5em;
     }
     
     section.tertiary h2 {
         padding: 0.5em 0em 0em 0.4em;
     }
 
+    section.secondary p {
+        padding: 0.5em 0em 0em 0.4em;
+        margin-right: 2em;
+        margin-left: .5em;
+    }
+
+    section.mainstory p {
+        margin-left: .5em;
+    }
+    
     p {
-        padding: 0em 0em 0.5em 0.5em;
+        padding: 0.5em 0em 0em 0.4em;
+        margin-right: 2em;
     }
 
     figcaption {
@@ -157,15 +176,12 @@ footer p {
         line-height: 1.25em;
     }
 
-    main p {
-        padding-left: 0.5em;
-    }
 }
 
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 40em) {
 
     div.home-container {
-        max-width: 80em;
+        max-width: 100em;
         padding: 0 1em;
         display: grid;
         grid-template-columns: 3fr 1fr;
@@ -264,3 +280,20 @@ footer p {
     }
 
     }
+/*
+    bmx radical
+    cc monster mash 
+    quasimoda
+
+    awards
+    horror posters
+    classics
+    genres 
+    new releases
+    actors
+
+    #36311F - brown
+    #CA2D02 - red
+    #DC8B18 - orange
+    #4B346F - purple 
+    #A7C133 - green
