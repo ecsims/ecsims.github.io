@@ -189,7 +189,7 @@ footer p {
     }
 
      div.container {
-        max-width: 60em;
+        max-width: 100em;
         padding: 0 1em;
         display: grid;
         grid-template-columns: 3fr 1fr;
@@ -227,6 +227,7 @@ footer p {
         grid-column: 2/4;
         grid-row: 1/3;
         display: flex;
+        max-width: 100em;
     }
 
     section.mainstory a {
