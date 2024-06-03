@@ -1,0 +1,130 @@
+/*CSS document*/
+
+body {
+    font-family: sans-serif;
+	line-height: 1.4em;
+	color: #222;
+	background-color: #ddd;
+	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-bottom: 1em;
+    font-family: bely-display, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2em;
+    color: #A7C133;
+}
+
+img {
+	width: 100%;
+    max-width: 60em;
+}
+
+
+div.container {
+    background-color: #36311F;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+article {
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+
+
+figure{
+    width: calc(100%-10em);
+    display: block;
+    margin: auto;
+    position: absolute;
+    opacity: 0;
+    left: 100%;
+    transition: left .5s, opacity .5s;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 1em;
+    padding: 0.25em 0em 0.5em 0em;
+    font-family: sans-serif;
+    color: #A7C133;
+}
+
+
+input:nth-of-type(1):checked ~ main figure:nth-of-type(1),
+input:nth-of-type(2):checked ~ main figure:nth-of-type(2),
+input:nth-of-type(3):checked ~ main figure:nth-of-type(3),
+input:nth-of-type(4):checked ~ main figure:nth-of-type(4){
+    opacity: 1;
+    left: 0;
+}
+
+
+label {
+    flex: 1 0 8em;
+}
+
+
+input {
+    display: none;
+}
+
+div.container, div.home-container {
+    background-color: #36311F;
+}
+
+@media screen and (max-width: 40em){
+
+    div.container {
+        background: #36311F;
+    }
+
+    main {
+        display: block;
+      
+    }
+
+    nav {
+        display: flex;
+        grid-gap: 0.2em;
+    
+    }
+    
+    nav label {
+        flex: 1 1 10em;
+    }
+
+    article {
+        padding-bottom: calc(140% + 7em);
+    }
+
+    figure {
+        position: absolute;
+    }
+
+    h1 {
+        line-height: 1.25em;
+    }
+
+}
+
+@media only screen and (min-width: 40em){
+    main {
+        display: grid;
+        grid-template-columns: 10em auto;
+        grid-gap: 1em;
+    }
+
+    article {
+        padding-bottom: calc(140% + 7em);
+    }
+    
+
+}
